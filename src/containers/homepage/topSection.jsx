@@ -5,11 +5,13 @@ import Button from "../../components/button";
 import DownArrow from "../../components/downArrow";
 import Logo from "../../components/logo";
 import { Marginer } from "../../components/marginer";
+import Navbar from "../../components/navbar";
 
 const TopSection = () => {
   return (
     <TopContainer>
       <BackgroundFilter>
+        <Navbar />
         <Marginer direction="vertical" margin="8em" />
         <Logo />
         <Marginer direction="vertical" margin="4em" />

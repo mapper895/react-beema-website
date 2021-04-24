@@ -7,12 +7,12 @@ const Button = (props) => {
 };
 
 const ButtonWrapper = styled.button`
-  padding: 7px 15px;
+  padding: ${({ small }) => (small ? "5px 10px" : "7px 15px")};
   border-radius: 5px;
   background-color: ${theme.primary};
   color: #fff;
   font-weight: bold;
-  font-size: 16px;
+  font-size: ${({ small }) => (small ? "12px" : "16px")};
   outline: none;
   border: 2px solid transparent;
   transition: all 300ms ease;
