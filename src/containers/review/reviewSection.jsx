@@ -20,7 +20,7 @@ const ReviewSection = () => {
       <Marginer direction="vertical" margin="3em" />
       <StyledCarouselProvider
         naturalSlideWidth={200}
-        naturalSlideHeight={250}
+        naturalSlideHeight={205}
         totalSlides={4}
         visibleSlides={2}
       >
@@ -61,7 +61,7 @@ const ReviewSection = () => {
 };
 
 const ReviewContainer = styled(Element)`
-  height: 800px;
+  height: 700px;
   display: flex;
   flex-direction: column;
   align-items: center;
