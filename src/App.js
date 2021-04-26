@@ -1,4 +1,5 @@
 import "./App.css";
+import Footer from "./components/footer";
 import Homepage from "./containers/homepage";
 import MoreAboutSection from "./containers/moreAbout/moreAboutSection";
 import ReviewSection from "./containers/review/reviewSection";
@@ -11,6 +12,7 @@ function App() {
       <ServicesSection />
       <ReviewSection />
       <MoreAboutSection />
+      <Footer />
     </>
   );
 }
