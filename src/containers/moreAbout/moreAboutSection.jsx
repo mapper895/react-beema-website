@@ -33,12 +33,21 @@ const MoreAboutContainer = styled(Element)`
   justify-content: center;
   flex-direction: column;
   align-items: center;
+
+  @media screen and (max-width: 480px) {
+    padding: 0 1em;
+  }
 `;
 
 const AboutContainer = styled.div`
   display: flex;
   max-width: 1000px;
   align-items: center;
+
+  @media screen and (max-width: 480px) {
+    flex-wrap: wrap-reverse;
+    max-width: 100%;
+  }
 `;
 
 const AboutText = styled.p`
@@ -52,6 +61,12 @@ const AboutImg = styled.img`
   width: 600px;
   height: 500px;
   margin-left: 2em;
+
+  @media screen and (max-width: 480px) {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+  }
 `;
 
 export default MoreAboutSection;

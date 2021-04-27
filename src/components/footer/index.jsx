@@ -66,6 +66,12 @@ const AccessibilityContainer = styled.div`
   padding-left: 8px;
   color: #fff;
   justify-content: space-between;
+
+  @media screen and (max-width: 480px) {
+    width: 90%;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
 `;
 
 const PrivacyContainer = styled.div`
@@ -86,6 +92,10 @@ const SocialIcon = styled.div`
     margin-right: 12px;
   }
 
+  @media screen and (max-width: 480px) {
+    font-size: 12px;
+  }
+
   &:hover {
     color: #adadad;
   }
@@ -99,6 +109,14 @@ const Link = styled.a`
 
   &:not(:last-of-type) {
     margin-right: 12px;
+
+    @media screen and (max-width: 480px) {
+      margin-right: 10px;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    font-size: 11px;
   }
 
   &:hover {

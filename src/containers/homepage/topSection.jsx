@@ -57,6 +57,7 @@ const MotivationalText = styled.h2`
   line-height: 1.4;
   font-weight: normal;
   color: #ffff;
+  text-align: center;
 `;
 
 const DownArrowContainer = styled.div`

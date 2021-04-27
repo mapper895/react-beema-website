@@ -6,6 +6,8 @@ import { Marginer } from "../../components/marginer";
 import ReviewCard from "../../components/reviewCard";
 import { SectionTitle } from "../../components/sectionTitle";
 
+import { useMediaQuery } from "react-responsive";
+
 import "pure-react-carousel/dist/react-carousel.es.css";
 
 import User1Img from "../../assets/pictures/profile_picture_1.jpg";
@@ -14,15 +16,16 @@ import User3Img from "../../assets/pictures/profile_picture_3.jpg";
 import User4Img from "../../assets/pictures/profile_picture_4.jpeg";
 
 const ReviewSection = () => {
+  const isMobile = useMediaQuery({ query: "(max-width: 480px)" });
   return (
     <ReviewContainer>
       <SectionTitle>What others are saying about us</SectionTitle>
       <Marginer direction="vertical" margin="3em" />
       <StyledCarouselProvider
         naturalSlideWidth={200}
-        naturalSlideHeight={205}
+        naturalSlideHeight={isMobile ? 250 : 205}
         totalSlides={4}
-        visibleSlides={2}
+        visibleSlides={isMobile ? 1 : 2}
       >
         <Slider>
           <StyledSlide index={0}>
@@ -69,6 +72,10 @@ const ReviewContainer = styled(Element)`
 
 const StyledCarouselProvider = styled(CarouselProvider)`
   width: 50%;
+
+  @media screen and (max-width: 480px) {
+    width: 100%;
+  }
 `;
 
 const StyledSlide = styled(Slide)`
